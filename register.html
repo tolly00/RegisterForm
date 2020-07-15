@@ -7,12 +7,14 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <form action="" class="main">
+        <form action="" class="main p-3 mt-3 border-primary" onsubmit="return validation()">
+            <h1 class="text-primary text-center mt-2 mb-2">Register</h1>
             <div class="row">
                 <div class="col">
                     <div class="form-group">
                         <label for="firstname">Firstname</label>
                         <input type="text" name="firstname" id="firstname" class="form-control">
+                        <span class="text-danger font-weight-bold " id="msgfirst"></span>
                     </div>
                 </div>
                 <div class="col">
@@ -41,8 +43,12 @@
                     <option value="female">Female</option>
                 </select>
             </div>
+            <div class="form-group">
+                <input type="submit" value="Valider" id="valider" class="form-control btn-primary">
+            </div>
 
         </form>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+        <script src="register.js"></script>
     </body>
 </html>

@@ -1,4 +1,7 @@
 .main{
     width: 450px;
     margin: auto;
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: black;
 }
